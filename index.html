@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/brands.css" integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css" integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/logo.ico">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <title>Podcast Channel</title>
 </head>
@@ -24,7 +25,7 @@
             <a href="#topicos" class="text-link-normal">TOPICÓS</a>
         </div>
         <div class="nav-mobile">
-            <input id="desplegar" type="checkbox" class="custom-checkbox" />
+            <!-- <input id="desplegar" type="checkbox" class="custom-checkbox" />
             <label for="desplegar" class="label-burger">
             <div class="mostrar-menu">
                 <div class="linea linea-top"></div>
@@ -38,6 +39,24 @@
                 <a href="#episodios" class="menu-item">EPISODIOS</a>
                 <a href="#entrevistas" class="menu-item">ENTREVISTAS</a>
                 <a href="#topicos" class="menu-item">TOPICÓS</a>
+            </div> -->
+            <div class="b-nav">
+                <li><a class="b-link" href="#nosotros">NOSOTROS</a></li>
+                <li><a class="b-link" href="#episodios">EPISODIOS</a></li>
+                <li><a class="b-link" href="#entrevistas">ENTREVISTAS</a></li>
+                <li><a class="b-link" href="#topicos">TÓPICOS</a></li>
+            </div>
+
+            <!-- Burger-Icon -->
+            <div class="b-container">
+                <div class="b-menu">
+                    <div class="b-bun b-bun--top"></div>
+                    <div class="b-bun b-bun--mid"></div>
+                    <div class="b-bun b-bun--bottom"></div>
+                </div>
+
+                <!-- Burger-Brand -->
+                <a href="#" class="b-brand"></a>
             </div>
         </div>
     </nav>
@@ -60,9 +79,9 @@
         </div>
     </div>
 
-    <div class="phone-container" id="nosotros">
+    <div class="phone-container">
         <img src="./assets/phone.png" class="phone" alt="imagen de celular mostrando un artículo sobre la historia secreta de la mujer en programación">
-        <div class="phone-text">
+        <div class="phone-text" id="nosotros">
             <h2>De dónde venimos</h2>
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
                 <br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
@@ -131,5 +150,7 @@
         </div>
     </div>
 </body>
+
+<script src="./script.js"></script>
 
 </html>
